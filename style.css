@@ -1,0 +1,99 @@
+/*First line (font link)*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-blue: hsl(246, 80%, 60%);
+
+    --primary-color-LightRed-Work: hsl(15, 100%, 70%);
+    --primary-color-SoftBlue-Play: hsl(195, 74%, 62%);
+    --primary-color-LightRed-Study: hsl(348, 100%, 68%);
+    --primary-color-LimeGreen-Exercise: hsl(145, 58%, 55%);
+    --primary-color-Violet-Social: hsl(264, 64%, 52%);
+    --primary-color-SoftOrange-SelfCare: hsl(43, 84%, 65%);
+
+    --neutral-color-VeryDarkBlue: hsl(226, 43%, 10%);
+    --neutral-color-DarkBlue: hsl(235, 46%, 20%);
+    --neutral-color-DesaturatedBlue: hsl(235, 45%, 61%);
+    --neutral-color-PaleBlue: hsl(236, 100%, 87%);
+    --extra-color: white;
+
+    --font-size-1: 18px;
+}
+
+body { /*padding top 30px for middle?*/
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--font-size-1);
+    background: var(--neutral-color-VeryDarkBlue);
+    padding-top: 250px;
+}
+
+.principal_card{ /*margin 0 auto to center?, there must be another solution */
+    background: var(--neutral-color-DarkBlue);
+    color: var(--neutral-color-PaleBlue);
+    max-width: 250px;
+    border-radius: 12px;
+    margin: 0 auto;
+    transition: box-shadow 0.4s ease;
+}
+.principal_card:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.username_description{
+    border-radius: 12px;
+    background: var(--primary-color-blue);
+    padding: 25px;
+}
+.User_Photo{ /*with 7px, the white circle deforms*/
+    height: 85px;
+    border: solid 3px var(--extra-color);
+    border-radius: 50%;
+    /*padding-top: 7px;*/
+}
+.assignment{ /*"report for"*/
+    padding-top: 40px;
+    font-size: 15px;
+}
+.name{ /*JEREMY ROBSON*/
+    color: var(--extra-color);
+    font-size: 37px;
+    padding-top: 2px;
+    padding-bottom: 65px;
+}
+.reports {
+    padding: 25px;
+}
+/* ERROR height in day, month and week, (when: hover) CURSOR select space between elements */
+.p_day{ /*p_day, p_month, p_week (repeating some properties, bad practice?)*/
+    padding-bottom: 20px;
+    cursor:pointer;
+    width: 40px;
+    transition: color 0.3s ease;
+}
+.p_day:hover {
+    color: var(--extra-color);
+}
+.p_week{
+    padding-bottom: 20px;
+    cursor:pointer;
+    width: 60px;
+    transition: color 0.3s ease;
+
+}
+.p_week:hover {
+    color: var(--extra-color);
+}
+.p_month{
+    padding-bottom: 5px;
+    cursor:pointer;
+    width: 65px;
+    transition: color 0.3s ease;
+}
+.p_month:hover {
+    color: var(--extra-color);
+}
