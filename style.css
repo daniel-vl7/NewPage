@@ -30,15 +30,21 @@ body { /*padding top 30px for middle?*/
     font-family: 'Rubik', sans-serif;
     font-size: var(--font-size-1);
     background: var(--neutral-color-VeryDarkBlue);
-    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    padding-top: 200px;
 }
 
 .principal_card{ /*margin 0 auto to center?, there must be another solution */
     background: var(--neutral-color-DarkBlue);
     color: var(--neutral-color-PaleBlue);
-    max-width: 250px;
+    width: 250px;
     border-radius: 12px;
-    margin: 0 auto;
     transition: box-shadow 0.4s ease;
 }
 .principal_card:hover{
@@ -96,4 +102,56 @@ body { /*padding top 30px for middle?*/
 }
 .p_month:hover {
     color: var(--extra-color);
+}
+
+.secondary_cards {
+    background: var(--primary-color-LightRed-Work);
+    color: var(--neutral-color-PaleBlue);
+    width: 250px;
+    height: 100px;
+    border-radius: 12px;
+    margin-left: 1.5em;
+    transition: box-shadow 0.4s ease;
+}
+
+.secondary_cards:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+
+.above{
+    border-radius: 12px;
+    background: var(--primary-color-LightRed-Work);
+}
+
+.info{
+    border-radius: 12px;
+    background: var(--neutral-color-DarkBlue);
+    padding: 45px;
+}
+
+.Work_image{
+    height: 75px;
+    padding-left: 160px;
+}
+
+.task{
+    color: var(--extra-color);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.points{
+    margin-top: -.3em;
+}
+
+.hours{
+    font-size: 40px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.tracker{
+    font-size: 10px;
+
 }
