@@ -117,38 +117,163 @@ body { /*padding top 30px for middle?*/
     color: var(--neutral-color-PaleBlue);
     border-radius: 12px;
     transition: box-shadow 0.4s ease;
-    height: 200px;
+    height: 230px;
 }
 .Tracker_Work:hover{
     box-shadow: 0 1px 5px rgba(0,0,0,80%);
 }
-.Tasks{
+.Tracker_Play{
+    background-color: var(--primary-color-SoftBlue-Play);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Play:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Study{
+    background-color: var(--primary-color-LightRed-Study);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Study:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Exercise{
+    background-color: var(--primary-color-LimeGreen-Exercise);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Exercise:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Social{
+    background-color: var(--primary-color-Violet-Social);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Social:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Self_care{
+    background-color: var(--primary-color-SoftOrange-SelfCare);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Self_care:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Task_Work{
     background: var(--neutral-color-DarkBlue);
-    height: 157px;
+    height: 190px;
     border-radius: 12px;
     position: relative;
     bottom: 40px;
     transition: background-color 0.4s ease;
 }
-
-.Tasks:hover{
+.Task_Work:hover{
     background-color: var(--neutral-color-DesaturatedBlue);
 }
-
+.Task_Play{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 38px;
+    transition: background-color 0.4s ease;
+}
+.Task_Play:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Study{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 40px;
+    transition: background-color 0.4s ease;
+}
+.Task_Study:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Exercise{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 15px;
+    transition: background-color 0.4s ease;
+}
+.Task_Exercise:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Social{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 60px;
+    transition: background-color 0.4s ease;
+}
+.Task_Social:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Self_care{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 28px;
+    transition: background-color 0.4s ease;
+}
+.Task_Self_care:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
 .image{
-    min-height: 10px;
+    min-height: 20px;
     overflow: hidden;
     border-radius: 12px;
 }
 .image .image_1{
+    padding-left: 135px;
+    position: relative;
+    bottom: 10px;
+}
+.image .image_2{
+    padding-left: 135px;
+    position: relative;
+    bottom: 5px;
+}
+.image .image_3{
     clip-path: inset(12.9% 0 30.4% 0);
+    padding-left: 135px;
+    position: relative;
+    bottom: 10px;
+}
+.image .image_4{
+    padding-left: 135px;
+}
+.image .image_5{
+    padding-left: 135px;
+    position: relative;
+}
+.image .image_6{
     padding-left: 135px;
     position: relative;
     bottom: 10px;
 }
 .assignment_1{
     position: relative;
-    top: 10px;
+    top: 20px;
 }
 .first{
     display: flex;
@@ -173,7 +298,7 @@ body { /*padding top 30px for middle?*/
     cursor:pointer;
 }
 .hours{
-    font-size: 45px;
+    font-size: 60px;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 20px;
