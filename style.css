@@ -38,6 +38,7 @@ body { /*padding top 30px for middle?*/
 .container{
     display: flex;
     padding-top: 200px;
+    width: 1000px;
 }
 
 .principal_card{ /*margin 0 auto to center?, there must be another solution */
@@ -105,53 +106,47 @@ body { /*padding top 30px for middle?*/
 }
 
 .secondary_cards {
-    background: var(--primary-color-LightRed-Work);
-    color: var(--neutral-color-PaleBlue);
-    width: 250px;
-    height: 100px;
-    border-radius: 12px;
+    flex-grow: 1;
     margin-left: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5em;
+}
+.Tracker{
+    background: var(--neutral-color-DarkBlue);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    padding: 1em;
     transition: box-shadow 0.4s ease;
 }
-
-.secondary_cards:hover{
+.Tracker:hover{
     box-shadow: 0 1px 5px rgba(0,0,0,80%);
 }
-
-.above{
-    border-radius: 12px;
-    background: var(--primary-color-LightRed-Work);
-}
-
-.info{
-    border-radius: 12px;
-    background: var(--neutral-color-DarkBlue);
-    padding: 45px;
-}
-
-.Work_image{
-    height: 75px;
-    padding-left: 160px;
-}
-
-.task{
-    color: var(--extra-color);
-    font-size: 18px;
+.first{
     display: flex;
     justify-content: space-between;
 }
-
-.points{
-    margin-top: -.3em;
+.first .task{
+    font-size: 18px;
+    cursor:pointer;
+    transition: color 0.3s ease;
 }
-
+.first .task:hover{
+    color: var(--extra-color);
+}
+.first .icon{
+    width: 22px;
+    height: 5px;
+    margin-top: 0.5em;
+    cursor:pointer;
+}
 .hours{
     font-size: 40px;
     margin-top: 8px;
-    margin-bottom: 4px;
+    cursor:pointer;
+    transition: color 0.3s ease;
+}
+.hours:hover{
+    color: var(--extra-color);
 }
 
-.tracker{
-    font-size: 10px;
-
-}
