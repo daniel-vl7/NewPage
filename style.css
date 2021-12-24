@@ -26,20 +26,30 @@
     --font-size-1: 18px;
 }
 
-body { /*padding top 30px for middle?*/
+body {
     font-family: 'Rubik', sans-serif;
     font-size: var(--font-size-1);
     background: var(--neutral-color-VeryDarkBlue);
-    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.principal_card{ /*margin 0 auto to center?, there must be another solution */
+.container{
+    display: flex;
+    padding-top: 200px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 3em;
+}
+
+.principal_card {
     background: var(--neutral-color-DarkBlue);
     color: var(--neutral-color-PaleBlue);
-    max-width: 250px;
+    min-width: 250px;
     border-radius: 12px;
-    margin: 0 auto;
     transition: box-shadow 0.4s ease;
+    height: auto;
 }
 .principal_card:hover{
     box-shadow: 0 1px 5px rgba(0,0,0,80%);
@@ -47,29 +57,36 @@ body { /*padding top 30px for middle?*/
 .username_description{
     border-radius: 12px;
     background: var(--primary-color-blue);
-    padding: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 330px;
+    position: relative;
+    padding-bottom: 0;
 }
-.User_Photo{ /*with 7px, the white circle deforms*/
+.User_Photo{
     height: 85px;
     border: solid 3px var(--extra-color);
     border-radius: 50%;
-    /*padding-top: 7px;*/
+
 }
-.assignment{ /*"report for"*/
+.assignment{
     padding-top: 40px;
     font-size: 15px;
 }
-.name{ /*JEREMY ROBSON*/
+.name{
     color: var(--extra-color);
     font-size: 37px;
     padding-top: 2px;
     padding-bottom: 65px;
 }
 .reports {
+    background: var(--neutral-color-DarkBlue);
+    border-radius: 12px;
     padding: 25px;
+    height: 160px;
+    position: relative;
 }
-/* ERROR height in day, month and week, (when: hover) CURSOR select space between elements */
-.p_day{ /*p_day, p_month, p_week (repeating some properties, bad practice?)*/
+.p_day{
     padding-bottom: 20px;
     cursor:pointer;
     width: 40px;
@@ -96,4 +113,214 @@ body { /*padding top 30px for middle?*/
 }
 .p_month:hover {
     color: var(--extra-color);
+}
+
+.secondary_cards {
+    flex-grow: 1;
+    margin-left: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(222px, 1fr));
+    grid-gap: 1.5em;
+}
+.Tracker_Work{
+    background-color: var(--primary-color-LightRed-Work);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Work:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Play{
+    background-color: var(--primary-color-SoftBlue-Play);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Play:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Study{
+    background-color: var(--primary-color-LightRed-Study);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Study:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Exercise{
+    background-color: var(--primary-color-LimeGreen-Exercise);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Exercise:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Social{
+    background-color: var(--primary-color-Violet-Social);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Social:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Tracker_Self_care{
+    background-color: var(--primary-color-SoftOrange-SelfCare);
+    color: var(--neutral-color-PaleBlue);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+    height: 230px;
+}
+.Tracker_Self_care:hover{
+    box-shadow: 0 1px 5px rgba(0,0,0,80%);
+}
+.Task_Work{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 40px;
+    transition: background-color 0.4s ease;
+}
+.Task_Work:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Play{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 38px;
+    transition: background-color 0.4s ease;
+}
+.Task_Play:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Study{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 40px;
+    transition: background-color 0.4s ease;
+}
+.Task_Study:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Exercise{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 15px;
+    transition: background-color 0.4s ease;
+}
+.Task_Exercise:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Social{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 60px;
+    transition: background-color 0.4s ease;
+}
+.Task_Social:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.Task_Self_care{
+    background: var(--neutral-color-DarkBlue);
+    height: 190px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 28px;
+    transition: background-color 0.4s ease;
+}
+.Task_Self_care:hover{
+    background-color: var(--neutral-color-DesaturatedBlue);
+}
+.image{
+    min-height: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.image .image_1{
+    padding-left: 135px;
+    position: relative;
+    bottom: 10px;
+}
+.image .image_2{
+    padding-left: 135px;
+    position: relative;
+    bottom: 5px;
+}
+.image .image_3{
+    clip-path: inset(12.9% 0 30.4% 0);
+    padding-left: 135px;
+    position: relative;
+    bottom: 10px;
+}
+.image .image_4{
+    padding-left: 135px;
+}
+.image .image_5{
+    padding-left: 135px;
+    position: relative;
+}
+.image .image_6{
+    padding-left: 135px;
+    position: relative;
+    bottom: 10px;
+}
+.assignment_1{
+    position: relative;
+    top: 20px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+.first .task{
+    font-size: 18px;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+.first .task:hover{
+    color: var(--extra-color);
+}
+.first .icon{
+    width: 22px;
+    height: 5px;
+    margin-top: 1em;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.hours{
+    font-size: 60px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    cursor:pointer;
+    transition: color 0.3s ease;
+}
+.hours:hover{
+    color: var(--extra-color);
+}
+.last_week{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 8px;
 }
