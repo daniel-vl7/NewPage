@@ -43,12 +43,13 @@ body {
     margin: 3em;
 }
 
-.principal_card{
+.principal_card {
     background: var(--neutral-color-DarkBlue);
     color: var(--neutral-color-PaleBlue);
     min-width: 250px;
     border-radius: 12px;
     transition: box-shadow 0.4s ease;
+    height: auto;
 }
 .principal_card:hover{
     box-shadow: 0 1px 5px rgba(0,0,0,80%);
@@ -56,29 +57,36 @@ body {
 .username_description{
     border-radius: 12px;
     background: var(--primary-color-blue);
-    padding: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 330px;
+    position: relative;
+    padding-bottom: 0;
 }
-.User_Photo{ /*with 7px, the white circle deforms*/
+.User_Photo{
     height: 85px;
     border: solid 3px var(--extra-color);
     border-radius: 50%;
-    /*padding-top: 7px;*/
+
 }
-.assignment{ /*"report for"*/
+.assignment{
     padding-top: 40px;
     font-size: 15px;
 }
-.name{ /*JEREMY ROBSON*/
+.name{
     color: var(--extra-color);
     font-size: 37px;
     padding-top: 2px;
     padding-bottom: 65px;
 }
 .reports {
+    background: var(--neutral-color-DarkBlue);
+    border-radius: 12px;
     padding: 25px;
+    height: 160px;
+    position: relative;
 }
-/* ERROR height in day, month and week, (when: hover) CURSOR select space between elements */
-.p_day{ /*p_day, p_month, p_week (repeating some properties, bad practice?)*/
+.p_day{
     padding-bottom: 20px;
     cursor:pointer;
     width: 40px;
